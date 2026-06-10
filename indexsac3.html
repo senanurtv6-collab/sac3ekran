@@ -22,11 +22,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: var(--bg);
-            min-height: 100vh;
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); min-height: 100vh; }
 
         .login-page {
             width: 100%; height: 100vh;
@@ -36,14 +32,10 @@
         }
 
         .login-container {
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 50px 40px;
-            width: 420px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-            z-index: 1;
+            background: rgba(255,255,255,0.05); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+            padding: 50px 40px; width: 420px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5); z-index: 1;
         }
 
         .login-logo { text-align: center; margin-bottom: 30px; }
@@ -58,11 +50,9 @@
         }
 
         .user-badge {
-            background: rgba(79,195,247,0.15);
-            border: 1px solid rgba(79,195,247,0.3);
-            border-radius: 20px; padding: 6px 15px;
-            color: var(--primary); font-size: 13px;
-            margin-top: 15px; text-align: center;
+            background: rgba(79,195,247,0.15); border: 1px solid rgba(79,195,247,0.3);
+            border-radius: 20px; padding: 6px 15px; color: var(--primary);
+            font-size: 13px; margin-top: 15px; text-align: center;
         }
 
         .login-form .form-group { margin-bottom: 20px; }
@@ -70,10 +60,8 @@
         
         .login-form input {
             width: 100%; padding: 12px 15px;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 10px; color: var(--text);
-            font-size: 15px; transition: all 0.3s;
+            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px; color: var(--text); font-size: 15px; transition: all 0.3s;
         }
         .login-form input:focus { outline: none; border-color: var(--primary); }
         .login-form input::placeholder { color: #546e7a; }
@@ -90,15 +78,11 @@
 
         .login-error { color: var(--danger); font-size: 13px; text-align: center; margin-top: 12px; display: none; }
 
-        .main-page {
-            display: none; width: 100%; min-height: 100vh;
-            background: #f5f7fb; padding: 20px;
-        }
+        .main-page { display: none; width: 100%; min-height: 100vh; background: #f5f7fb; padding: 20px; }
 
         .container {
-            max-width: 1400px; margin: 0 auto;
-            background: var(--card-bg); padding: 30px;
-            border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 1400px; margin: 0 auto; background: var(--card-bg);
+            padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         h1 { color: var(--dark-heading); margin-bottom: 20px; font-size: 26px; display: flex; align-items: center; gap: 12px; }
@@ -107,11 +91,9 @@
         .header-buttons { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
 
         .btn {
-            background: var(--success); color: white;
-            border: none; padding: 10px 20px;
-            cursor: pointer; border-radius: 8px;
-            font-size: 14px; font-weight: 500;
-            transition: all 0.2s;
+            background: var(--success); color: white; border: none;
+            padding: 10px 20px; cursor: pointer; border-radius: 8px;
+            font-size: 14px; font-weight: 500; transition: all 0.2s;
         }
         .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
         .btn:disabled { background: #95a5a6; cursor: not-allowed; transform: none; box-shadow: none; opacity: 0.6; }
@@ -122,18 +104,12 @@
         .btn-info { background: #00bcd4; color: white; }
         .btn-sm { padding: 6px 12px; font-size: 12px; }
 
-        .logout-btn {
-            background: #e74c3c; color: white;
-            border: none; padding: 8px 20px;
-            border-radius: 6px; cursor: pointer;
-            font-size: 14px; transition: all 0.3s;
-        }
+        .logout-btn { background: #e74c3c; color: white; border: none; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: all 0.3s; }
         .logout-btn:hover { background: #c0392b; }
 
         .user-info {
-            background: #e8f4f8; padding: 15px 20px;
-            border-radius: 10px; display: flex;
-            justify-content: space-between; align-items: center;
+            background: #e8f4f8; padding: 15px 20px; border-radius: 10px;
+            display: flex; justify-content: space-between; align-items: center;
             margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
         }
         .user-info span { font-weight: bold; color: var(--dark-heading); font-size: 15px; }
@@ -146,25 +122,16 @@
         label { font-weight: 600; display: block; margin-bottom: 5px; color: #333; font-size: 13px; }
         
         select, input[type="text"], input[type="number"], input[type="date"] {
-            width: 100%; padding: 10px 12px;
-            border: 1px solid #ddd; border-radius: 8px;
-            font-size: 14px; transition: border 0.2s;
+            width: 100%; padding: 10px 12px; border: 1px solid #ddd;
+            border-radius: 8px; font-size: 14px; transition: border 0.2s;
         }
         select:focus, input:focus { outline: none; border-color: #2980b9; }
 
-        .info-note {
-            background: #fff3cd; border: 1px solid #ffe69c;
-            padding: 15px; border-radius: 8px;
-            margin: 15px 0; color: #856404; font-size: 14px;
-        }
+        .info-note { background: #fff3cd; border: 1px solid #ffe69c; padding: 15px; border-radius: 8px; margin: 15px 0; color: #856404; font-size: 14px; }
 
         table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
         th, td { border: 1px solid #e0e0e0; padding: 8px 10px; text-align: center; }
-        th {
-            background-color: #2c3e50; color: white;
-            position: sticky; top: 0; z-index: 10;
-            font-size: 12px; font-weight: 600;
-        }
+        th { background-color: #2c3e50; color: white; position: sticky; top: 0; z-index: 10; font-size: 12px; font-weight: 600; }
         th.sortable { cursor: pointer; user-select: none; }
         th.sortable:hover { background-color: #34495e; }
         th .sort-arrow { margin-left: 4px; font-size: 10px; }
@@ -177,16 +144,9 @@
         .toplam-input { width: 90px; background: #e8f5e9; font-weight: bold; padding: 6px; text-align: center; font-size: 12px; border: 1px solid #ddd; border-radius: 4px; }
         .checkbox-col { width: 40px; }
 
-        .gecmis-table-container {
-            max-height: 600px; overflow-y: auto;
-            border: 1px solid #e0e0e0; margin: 10px 0; border-radius: 8px;
-        }
+        .gecmis-table-container { max-height: 600px; overflow-y: auto; border: 1px solid #e0e0e0; margin: 10px 0; border-radius: 8px; }
 
-        .modal {
-            display: none; position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6); z-index: 1000;
-        }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; }
 
         .modal-content {
             background: white; margin: 3% auto; padding: 25px;
@@ -197,25 +157,15 @@
         .close-modal:hover { color: #333; }
 
         .pagination { display: flex; gap: 6px; justify-content: center; margin: 15px 0; flex-wrap: wrap; }
-        .pagination button {
-            padding: 8px 14px; cursor: pointer;
-            border: 1px solid #ddd; background: white;
-            border-radius: 6px; font-size: 13px;
-        }
+        .pagination button { padding: 8px 14px; cursor: pointer; border: 1px solid #ddd; background: white; border-radius: 6px; font-size: 13px; }
         .pagination button:hover:not(:disabled) { background: #f0f0f0; }
         .pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-        .detay-row {
-            display: flex; justify-content: space-between;
-            padding: 10px 0; border-bottom: 1px solid #eee; align-items: center;
-        }
+        .detay-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; }
         .detay-label { font-weight: 600; color: #2c3e50; min-width: 140px; }
         .detay-value { color: #333; flex: 1; text-align: right; }
 
-        .detay-edit-section {
-            background: #f8f9fa; padding: 20px; border-radius: 8px;
-            margin: 20px 0; border: 2px solid var(--primary);
-        }
+        .detay-edit-section { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border: 2px solid var(--primary); }
         .edit-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         .edit-table th { background: #2980b9; font-size: 11px; }
         .edit-table td { padding: 6px; }
@@ -225,10 +175,7 @@
 
         .action-buttons { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
 
-        .filtre-satir {
-            display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px;
-            background: #f8f9fa; padding: 15px; border-radius: 8px;
-        }
+        .filtre-satir { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; background: #f8f9fa; padding: 15px; border-radius: 8px; }
         .filtre-satir > div { flex: 1; min-width: 140px; }
 
         .excel-actions {
@@ -251,9 +198,8 @@
 
         .kilitli-bilgi {
             background: #ffe0b2; border: 1px solid #ff9800;
-            padding: 12px 18px; border-radius: 8px;
-            margin: 10px 0; color: #e65100;
-            font-weight: 600; display: flex; align-items: center; gap: 10px;
+            padding: 12px 18px; border-radius: 8px; margin: 10px 0;
+            color: #e65100; font-weight: 600; display: flex; align-items: center; gap: 10px;
         }
     </style>
 </head>
@@ -291,7 +237,7 @@
         </div>
 
         <div id="yeniGirisAlan">
-            <div class="info-note">⚠️ <strong>SAC3 Özel Sistem:</strong> Bu sistem sadece SAC3 kullanıcısına aittir. Tüm veriler SAC3'in özel Firebase veritabanında saklanır.</div>
+            <div class="info-note">⚠️ <strong>SAC3 Özel Sistem:</strong> Bu sistem sadece SAC3 kullanıcısına aittir. Tüm veriler SAC3'ün özel Firebase veritabanında saklanır.</div>
 
             <div class="form-group">
                 <label>Stok Grubu Seçiniz:</label>
@@ -370,15 +316,15 @@
 </div>
 
 <script>
-// ==================== SAC3 FIREBASE YAPILANDIRMASI ====================
+// ==================== SAC3 FIREBASE YAPILANDIRMASI (GÜNCEL) ====================
 const sac3FirebaseConfig = {
     apiKey: "AIzaSyDHxIkQgAnazAVkNngUsSaII3Ij7DIvj9s",
     authDomain: "sac3-kesim.firebaseapp.com",
-    databaseURL: "https://sac3-kesim-default-rtdb.europe-west1.firebasedatabase.app", // ⚠️ KONTROL ET! Firebase Console'dan Realtime Database URL'ini kopyala
+    databaseURL: "https://sac3-kesim-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "sac3-kesim",
     storageBucket: "sac3-kesim.firebasestorage.app",
     messagingSenderId: "365842219004",
-    appId: "1:365842219004:web:73319a5b1cef28cf9e7c79"
+    appId: "1:365842219004:web:91aaf46917786f8d9e7c79"
 };
 
 firebase.initializeApp(sac3FirebaseConfig);
@@ -503,7 +449,7 @@ function siranoArtir() { siraNo++; syncData(); }
 function getDurum(evrak) { let a = aktarilanEvraklar.includes(evrak["Sıra No"]); let d = evrak["Duzenlendi"] || false; if(a) return "Excel'e Aktarıldı"; if(d) return "Düzenlendi"; return "Bekliyor"; }
 function evrakAktarildiMi(evrak) { return aktarilanEvraklar.includes(evrak["Sıra No"]); }
 
-// ==================== LOGIN ====================
+// LOGIN
 document.getElementById("loginBtn").onclick = function() {
     let u = document.getElementById("loginUsername").value.trim();
     let p = document.getElementById("loginPassword").value.trim();
@@ -544,7 +490,7 @@ document.getElementById("yeniGirisBtn").onclick = anaSayfayaDon;
 document.getElementById("yeniKayitDonBtn").onclick = anaSayfayaDon;
 document.getElementById("oncekiGirislerBtn").onclick = gecmisListesiniGoster;
 
-// ==================== STOK GRUBU ====================
+// STOK GRUBU
 document.getElementById("stokGrubu").onchange = function() {
     let g = this.value;
     let us = document.getElementById("urunKodu");
@@ -557,7 +503,7 @@ document.getElementById("stokGrubu").onchange = function() {
     ta.style.display = "none"; ta.innerHTML = "";
 };
 
-// ==================== ÜRÜN SEÇİNCE TABLO ====================
+// ÜRÜN SEÇİNCE TABLO
 document.getElementById("urunKodu").onchange = function() {
     let sec = Array.from(this.selectedOptions).map(o => o.value);
     let ta = document.getElementById("tabloAlan");
@@ -581,7 +527,7 @@ document.getElementById("urunKodu").onchange = function() {
     });
 };
 
-// ==================== KAYDET ====================
+// KAYDET
 function kaydetVeGecmiseGit(yonlendir) {
     let satirlar = document.querySelectorAll("#tabloAlan tbody tr");
     if(satirlar.length === 0) { document.getElementById("mesaj").innerHTML = "<span class='error'>Lütfen en az bir ürün seçin!</span>"; return false; }
@@ -610,7 +556,7 @@ function kaydetVeGecmiseGit(yonlendir) {
 document.getElementById("kaydetBtn").onclick = () => kaydetVeGecmiseGit(false);
 document.getElementById("kayitSonrasiGecmisBtn").onclick = () => kaydetVeGecmiseGit(true);
 
-// ==================== ÖNCEKİ GİRİŞLER ====================
+// ÖNCEKİ GİRİŞLER
 function gecmisListesiniGoster() {
     document.getElementById("yeniGirisAlan").classList.add("hidden");
     document.getElementById("oncekiGirislerAlan").classList.remove("hidden");
@@ -698,7 +644,7 @@ window.sayfaDegistir = function(p) { currentPage = p; gecmisYukle(); };
 document.getElementById("filtreUygulaBtn").onclick = () => { currentPage = 1; seciliEvrakIndisleri.clear(); gecmisYukle(); };
 document.getElementById("filtreTemizleBtn").onclick = () => { document.getElementById("filtre_seri").value = ""; document.getElementById("filtre_sira").value = ""; document.getElementById("filtre_grup").value = ""; document.getElementById("filtre_tarih").value = ""; currentPage = 1; seciliEvrakIndisleri.clear(); gecmisYukle(); };
 
-// ==================== EXCEL ====================
+// EXCEL
 document.getElementById("seciliExceleAktarBtn").onclick = function() {
     if(seciliEvrakIndisleri.size === 0) { alert("Lütfen evrak seçin!"); return; }
     let secilen = []; seciliEvrakIndisleri.forEach(ix => { if(gecmisVeriler[ix]) secilen.push(gecmisVeriler[ix]); });
@@ -716,7 +662,7 @@ document.getElementById("seciliExceleAktarBtn").onclick = function() {
 document.getElementById("tumunuSecBtn").onclick = function() { document.querySelectorAll('.evrak-checkbox').forEach(cb => { cb.checked = true; seciliEvrakIndisleri.add(parseInt(cb.dataset.idx)); }); document.getElementById("seciliSayi").textContent = seciliEvrakIndisleri.size; };
 document.getElementById("secimiTemizleBtn").onclick = function() { document.querySelectorAll('.evrak-checkbox').forEach(cb => { cb.checked = false; seciliEvrakIndisleri.delete(parseInt(cb.dataset.idx)); }); document.getElementById("seciliSayi").textContent = "0"; };
 
-// ==================== DETAY MODAL ====================
+// DETAY MODAL
 function stokSecenekleriniOlustur(grup, secili) { let o = '<option value="">-- Stok Seçin --</option>'; let sl = grup === "HRD" ? tumStoklariGetir() : (urunler[grup] || []); sl.forEach(s => { o += '<option value="' + s + '" ' + (s === secili ? 'selected' : '') + '>' + dotTemizle(s) + ' - ' + getStokIsmi(s) + '</option>'; }); return o; }
 
 window.detayGoster = function(idx) {
